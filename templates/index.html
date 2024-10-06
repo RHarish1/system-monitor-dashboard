@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitoring Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>System Monitoring Dashboard</h1>
+        <div class="metrics">
+            <p><strong>CPU Usage:</strong> {{ metrics['cpu'] }}%</p>
+            <p><strong>Memory Usage:</strong> {{ metrics['memory'] }}%</p>
+            <p><strong>Disk Usage:</strong> {{ metrics['disk'] }}%</p>
+        </div>
+    </div>
+</body>
+
+</html>
